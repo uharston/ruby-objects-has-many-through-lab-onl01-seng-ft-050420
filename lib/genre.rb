@@ -5,15 +5,15 @@ class Genre
   @@all = []
 
   def initialize(genre)
-    @genre = genre 
-    @@all << self 
-  end 
+    @genre = genre
+    @@all << self
+  end
 
-  def songs 
+  def songs
     Song.all.select {|s| s.genre == self}
-  end 
+  end
 
-  def self.all 
-    @@all 
-  end 
+  def self.all
+    @@all
+  end
 end
