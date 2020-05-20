@@ -1,11 +1,11 @@
 #require 'pry'
 class Genre
-  attr_reader
+  attr_reader :name 
 
   @@all = []
 
-  def initialize(genre)
-    @genre = genre
+  def initialize(name)
+    @name = name 
     @@all << self
   end
 
