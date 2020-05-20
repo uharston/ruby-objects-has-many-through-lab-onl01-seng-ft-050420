@@ -1,6 +1,6 @@
 require 'pry'
 class Artist
-  attr_reader :name, :genre
+  attr_reader :name
 
   @@all = []
 
