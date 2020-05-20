@@ -15,7 +15,7 @@ class Artist
 
   def songs
     Song.all.select {|s|
-      binding.pry
+
       s.artist == self
     }
   end
